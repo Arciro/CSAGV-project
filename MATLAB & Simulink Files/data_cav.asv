@@ -16,17 +16,11 @@ R   = 0.5;   % wheel radius
 
 %% IMPORT FROM EXCEL
 %elevation profile
-date_elev = readmatrix('ElevationProfile.xlsx');
+date_elev = xlsread('ElevationProfile.xlsx');
 elev_date_1 = date_elev(:,1);
 elev_date_2 = date_elev(:,2);
 
 %slope profile
 date_slope = readmatrix('GradientProfile.xlsx');
 slope_date_1 = date_slope(:,1);
-slope_date_2_grad = date_slope(:,2);
-slope_date_2_degree = zeros(length(slope_date_2_grad),1);
-
-for i = 1:length(slope_date_2_grad)
-    slope_date_2_grad(i) = slope_date_2_grad(i)/100;
-    slope_date_2_degree(i) = atan(slope_date_2_grad(i));
-end
+slope_date_2 = date_slope(:,2);
