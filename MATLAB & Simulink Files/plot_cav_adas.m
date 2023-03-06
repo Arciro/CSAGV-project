@@ -25,7 +25,14 @@ hold on
 plot(out.t,out.vel_ego)
 legend('v_{lead}', 'v_{ego}')
 ylim([-2 22])
+    
 
+it = length(out.t)-length(out.control_input);
+if it ~= 0
+    for i=1:it
+        out.control_input(5001+i) = 0;
+    end
+end
 figure(3)
 plot(out.t,out.control_input)
 grid on
