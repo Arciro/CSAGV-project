@@ -12,4 +12,13 @@ For this project we used Matlab & Simulink, specifically we exploited 2 toolboxe
 So before running file in **File Matlab & Simulink** folder, be sure to install these toolboxes.
 
 ## Running simulation
-In order to follow the development of my project, I suggest you to see my power point presentation called **Presentation**.
+In order to follow the development of my project, I suggest you to see my power point presentation called **Presentation**. Tou can see the project divided in three parts.
+
+### 1st part: Open loop analysis
+In order to visualize results of the open loop analysis you have to run following files:
+
+1) In the folder called Matlab & Simulink files run the matlab file *data_cav.m*
+2) After that run Simulink file named as *cav_nonlinear_model.slx*
+3) Finally if you want to run Matlab plot, run also *plot_nonlinear.m*
+
+### 2nd part: ADAS design

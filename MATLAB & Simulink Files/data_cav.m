@@ -2,7 +2,6 @@
 % ****CIRO ARENA P38/53***** %
 clear
 clc
-close all
 
 %% VEHICLE PARAMETERS
 m   = 1521;  % 𝑣𝑒ℎ𝑖𝑐𝑙𝑒 𝑚𝑎𝑠𝑠
@@ -30,3 +29,12 @@ for i = 1:length(slope_date_2_grad)
     slope_date_2_grad(i) = slope_date_2_grad(i)/100;
     slope_date_2_degree(i) = atan(slope_date_2_grad(i));
 end
+
+%% PARAMETERS UNCERTAINTES
+m_u = m-0.1*m + (2*0.1*m)*rand(1);
+fr_u = fr-0.1*fr + (2*0.1*fr)*rand(1);
+rho_u = rho-0.1*rho + (2*0.1*rho)*rand(1);
+Cd_u = Cd-0.1*Cd + (2*0.1*Cd)*rand(1);
+Af_u = Af-0.1*Af + (2*0.1*Af)*rand(1);
+eta_u = eta-0.1*eta + (2*0.1*eta)*rand(1);
+R_u = R-0.1*R + (2*0.1*R)*rand(1);
