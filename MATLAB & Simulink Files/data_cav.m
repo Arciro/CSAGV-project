@@ -38,3 +38,6 @@ Cd_u = Cd-0.1*Cd + (2*0.1*Cd)*rand(1);
 Af_u = Af-0.1*Af + (2*0.1*Af)*rand(1);
 eta_u = eta-0.1*eta + (2*0.1*eta)*rand(1);
 R_u = R-0.1*R + (2*0.1*R)*rand(1);
+
+%% DRIVING SCENARIO
+load('Highway_road_scenario.mat');

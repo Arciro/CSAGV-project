@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.15)  4 MAR 2023 22:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.15)  21 MAR 2023 14:11
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -122,6 +122,6 @@ Here is how much of TeX's memory you used:
  19670 multiletter control sequences out of 15000+600000
  469713 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 54i,7n,62p,226b,104s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 54i,5n,62p,226b,104s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on IguanaTex_tmp.dvi (1 page, 472 bytes).
+Output written on IguanaTex_tmp.dvi (1 page, 340 bytes).

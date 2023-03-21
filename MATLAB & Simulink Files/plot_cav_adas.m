@@ -28,9 +28,11 @@ ylim([-2 22])
     
 
 it = length(out.t)-length(out.control_input);
+j = length(out.control_input);
 if it ~= 0
+    a = 2;
     for i=1:it
-        out.control_input(5001+i) = 0;
+        out.control_input(j+i) = 0;
     end
 end
 figure(3)
@@ -39,7 +41,7 @@ grid on
 title('Acceleration')
 xlabel("t")
 ylabel("m/s^2")
-ylim([-3 3])
+%ylim([-3 3])
 
 figure(4)
 subplot(2,1,1)
